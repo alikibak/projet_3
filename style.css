@@ -413,13 +413,8 @@ input {
     }
 
     .box_image_popular {
-        max-width: 78px;
+        max-width: 100px;
         min-width: 0px;
-        overflow: hidden;
-    }
-
-    .box_image_popular img {
-        width: auto;
     }
 
     .activity {
