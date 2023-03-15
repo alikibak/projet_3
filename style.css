@@ -148,6 +148,13 @@ input {
     align-items: center;
     margin-top: 32px;
     margin-bottom: 38px;
+    overflow: scroll;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+
+.filters::-webkit-scrollbar {
+    display: none;
 }
 
 .button_filter {
@@ -406,9 +413,15 @@ input {
     }
 
     .box_image_popular {
-        max-width: 106px;
-        min-width: 106px;
+        max-width: 78px;
+        min-width: 0px;
+        overflow: hidden;
     }
+
+    .box_image_popular img {
+        width: auto;
+    }
+
     .activity {
         margin: 0 73px;
     }
@@ -507,6 +520,7 @@ input {
         grid-template-columns: 1fr 1fr;
         width: 100%;
         row-gap: 17px;
+        overflow: scroll;
     }
 
     .filters h2 {
