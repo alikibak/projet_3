@@ -214,6 +214,13 @@ input {
     width: 65.68%;
     height: 626px;
     padding: 42px 40px 46px 40px;
+    overflow: scroll;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+
+.box_lodgings::-webkit-scrollbar {
+    display: none;
 }
 
 .grid_lodgings {
