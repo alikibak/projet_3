@@ -149,8 +149,8 @@ input {
     margin-top: 32px;
     margin-bottom: 38px;
     overflow: scroll;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
 }
 
 .filters::-webkit-scrollbar {
@@ -215,8 +215,8 @@ input {
     height: 626px;
     padding: 42px 40px 46px 40px;
     overflow: scroll;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
 }
 
 .box_lodgings::-webkit-scrollbar {
@@ -394,13 +394,16 @@ input {
         gap: 53px ;
         margin: 39px 72px 70px 72px;
     }
+
     .box_lodgings {
         width: 100%;
     }
+
     .box_popular {
         width: 100%;
         padding: 34px 41px 48px 40px;
     }
+    
     .grid_popular {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -500,7 +503,6 @@ input {
         border-radius: 0px 15px 15px 0px;
         height: 100%;
         width: 49px;
-        min-width: 49px;
         background-color: #0065FC;
         font-size: 17px;
         color: #FFFFFF;
