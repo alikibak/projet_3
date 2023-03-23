@@ -490,13 +490,6 @@ input {
         margin: 0 20px;
     }
 
-    /* .search {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-    } */
-
     .button_pc {
         display: none;
     }
