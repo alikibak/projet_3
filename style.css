@@ -19,7 +19,6 @@ h1 {
 h2 {
     font-weight: 700;
     font-size: 18px;
-    
 }
 
 h3 {
@@ -54,7 +53,7 @@ a {
     height: 19px;
 }
 
-.header {
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -126,6 +125,8 @@ input {
     font-size: 18px;
     border-style: none;
     padding-left: 17px;
+    min-width: 0px;
+    border: 1px solid #F2F2F2;
 }
 
 .button_pc {
@@ -135,12 +136,15 @@ input {
     background-color: #0065FC;
     color: white;
     padding: 14px 16px;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-@media (min-width: 767px) {.button_phone {
+.button_phone {
     display: none;
     }
-}
+
 
 .filters {
     display: flex;
@@ -148,13 +152,6 @@ input {
     align-items: center;
     margin-top: 32px;
     margin-bottom: 38px;
-    overflow: scroll;
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
-}
-
-.filters::-webkit-scrollbar {
-    display: none;
 }
 
 .button_filter {
@@ -165,6 +162,8 @@ input {
     border-radius: 25px;
     margin-left: 3%;
     height: 50px;
+    background-color: white;
+
 }
 
 .button_filter:hover {
@@ -178,9 +177,10 @@ input {
     margin-right: 10px;
 }
 
-.button_filter h2 {
+.button_filter span {
     font-size: 17px;
     margin-right: 20px;
+    font-weight: 700;
 }
 
 .info {
@@ -214,9 +214,15 @@ input {
     width: 65.68%;
     height: 626px;
     padding: 42px 40px 46px 40px;
-    overflow: scroll;
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
+}
+
+.box_lodgings h2 {
+    font-size: 22px;
+}
+
+.box_lodgings a {
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .box_lodgings::-webkit-scrollbar {
@@ -232,7 +238,6 @@ input {
 
 .card_lodgings {
     border-radius: 20px;
-    overflow: hidden;
     width: 100%;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -274,6 +279,10 @@ input {
     padding: 41px 40px 34px 37px;
 }
 
+.box_popular h2 {
+    font-size: 22px;
+}
+
 .titre_popular {
     display: flex;
     flex-direction: row;
@@ -294,7 +303,6 @@ input {
     display: flex;
     flex-direction: row;
     border-radius: 20px;
-    overflow: hidden;
     max-width: 100%;
     height: 144px;
     background-color: #ffffff;
@@ -327,6 +335,10 @@ input {
     margin: 0 50px;
 }
 
+.activity h2 {
+    font-size: 22px;
+}
+
 .grid_activity {
     display: flex;
     flex-direction: row;
@@ -336,7 +348,6 @@ input {
 
 .card_activity {
     border-radius: 20px;
-    overflow: hidden;
     width: 22.538%;
     height: 444.51px;
     background-color: #ffffff;
@@ -371,10 +382,10 @@ input {
     margin: 60.51px 53px 0 48px ;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 225px;
     padding-top: 45px;
-    padding-left: 70px;
+    padding-right: 10%;
 }
 
 .list_footer h2 {
@@ -387,7 +398,7 @@ input {
 
                     /* tablette */
 
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1023px) and (min-width: 768px) {
     .lodging {
         display: flex;
         flex-direction: column;
@@ -444,9 +455,9 @@ input {
 
                     /* telephone */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     
-    .header {
+    header {
         flex-direction: column;
         height: 129px;
         padding: 0;
@@ -486,7 +497,6 @@ input {
 
     .presentation h1 {
         margin-bottom: 13px;
-        width: 298px;
     }
 
     .search {
@@ -506,6 +516,7 @@ input {
         background-color: #0065FC;
         font-size: 17px;
         color: #FFFFFF;
+        display: block;
         }
 
     input {
@@ -517,7 +528,6 @@ input {
         grid-template-columns: 1fr 1fr;
         width: 100%;
         row-gap: 17px;
-        overflow: scroll;
     }
 
     .filters h2 {
@@ -527,7 +537,7 @@ input {
 
     .button_filter {
         margin-left: 0;
-        width: 160px;
+        max-width: 160px
     }
     .button_filter h2 {
         font-size: 11px;
